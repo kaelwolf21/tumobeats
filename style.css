@@ -1,0 +1,61 @@
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    height: 100dvh;
+    }
+    
+    
+    body {
+    display:grid;
+    grid-template-areas:
+    'title title open'
+    'beats beats beats'
+    'scrub scrub scrub'
+    'previous playpause next'
+    'volume volume tumo';
+    grid-template-rows: 64px auto 32px auto 32px;
+    grid-template-columns:33% 33% 33%;
+    background-color: red;
+    width: 600px;
+    height: 600px
+    }
+
+    
+    #title {
+    background-color: green;
+    color: white;
+    margin: 0px;
+    grid-area: title;
+    }
+    
+    #open-input {
+    grid-area: open;
+    }
+    
+    #beats {
+    grid-area: beats;
+    }
+    
+    #scrub-input {
+    grid-area: scrub;
+    }
+    
+    #previous-button {
+    grid-area: previous;
+    }
+    #play-button {
+    grid-area: playpause;
+    }
+    #next-button {
+    grid-area: next;
+    }
+    
+    #volume-input {
+    grid-area: volume;
+    }
+    
+    #tumo {
+    grid-area: tumo;
+    }
